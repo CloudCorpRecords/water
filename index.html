@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>water — v0.3 fft ocean + optics</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%231b6f8f'/%3E%3C/svg%3E" />
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #0b1620; }
+      canvas { display: block; }
+      .chip {
+        position: fixed;
+        font: 12px/1.4 system-ui, -apple-system, sans-serif;
+        color: #fff;
+        background: rgba(10, 20, 30, 0.72);
+        padding: 6px 10px;
+        border-radius: 8px;
+        pointer-events: none;
+      }
+      #hud { top: 12px; left: 12px; }
+      #hud strong { font-weight: 650; }
+      #hud span { opacity: 0.75; }
+      #hint { right: 12px; bottom: 12px; opacity: 0.9; }
+    </style>
+  </head>
+  <body>
+    <div id="hud" class="chip"><strong>water</strong> <span>v0.3 · fft ocean + optics</span></div>
+    <div id="hint" class="chip">drag to orbit · scroll to zoom · right-drag to pan</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
